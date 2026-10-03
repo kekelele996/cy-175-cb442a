@@ -1,0 +1,13 @@
+{
+  "name": "markdown-notebook-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown 笔记工具后端健康检查服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {}
+}

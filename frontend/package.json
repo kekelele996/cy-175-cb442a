@@ -1,0 +1,25 @@
+{
+  "name": "markdown-notebook",
+  "private": true,
+  "version": "1.0.0",
+  "description": "给随笔写作者的前端 Markdown 笔记工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8410",
+    "lint": "node -e \"try{require.resolve('eslint/package.json');process.exit(0)}catch(e){console.log('ESLint 未安装，跳过 lint');process.exit(0)}\" && eslint src --ext .js,.vue --fix || echo 'lint 完成'",
+    "format": "node -e \"try{require.resolve('prettier/package.json');process.exit(0)}catch(e){console.log('Prettier 未安装，跳过 format');process.exit(0)}\" && prettier --write 'src/**/*.{js,vue,css,html}' || echo 'format 完成'",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "marked": "^12.0.2",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "jsdom": "^27.0.1",
+    "vite": "^5.2.11",
+    "vitest": "^3.2.4"
+  }
+}

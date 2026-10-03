@@ -1,0 +1,62 @@
+:root {
+    --bg-primary: #f4f7fb;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #eaf1fb;
+    --text-primary: #1a2a44;
+    --text-secondary: #4a5c7a;
+    --text-muted: #8a9ab5;
+    --accent: #3a7bd5;
+    --accent-hover: #2a63b8;
+    --border: #d6e1f0;
+    --shadow: rgba(58, 123, 213, 0.08);
+    --radius: 8px;
+    --radius-sm: 4px;
+    --transition: 160ms ease;
+    --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    transition: background var(--transition), color var(--transition);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
